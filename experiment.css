@@ -1,0 +1,101 @@
+/* Globale Einstellungen */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121214;
+  color: #e1e1e6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+/* Haupt-Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #9871ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Karten-Layout (Cards) */
+.card {
+  background-color: #202024;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #29292e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2, h3 {
+  color: #04d361;
+  margin-bottom: 15px;
+}
+
+/* Zeilenabstand im Absatz */
+p {
+  margin-bottom: 12px;
+  color: #c4c4cc;
+}
+
+/* Listen und Links */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Macht die Seite auf Handys einspaltig */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.styled-list {
+  padding-left: 20px;
+}
+
+.styled-list li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #3884ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #9871ff;
+  text-decoration: underline;
+}
+
+/* Bild-Styling */
+.image-section {
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}

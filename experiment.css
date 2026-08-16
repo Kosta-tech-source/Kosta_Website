@@ -1,9 +1,9 @@
-/* Globale Einstellungen */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 
 body {
   background-color: #121214;
@@ -13,7 +13,6 @@ body {
   padding: 40px 20px;
 }
 
-/* Haupt-Container */
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -31,7 +30,6 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* Karten-Layout (Cards) */
 .card {
   background-color: #202024;
   padding: 25px;
@@ -46,20 +44,17 @@ h2, h3 {
   margin-bottom: 15px;
 }
 
-/* Zeilenabstand im Absatz */
 p {
   margin-bottom: 12px;
   color: #c4c4cc;
 }
 
-/* Listen und Links */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-/* Macht die Seite auf Handys einspaltig */
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -86,7 +81,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Bild-Styling */
 .image-section {
   text-align: center;
   padding: 10px;
@@ -98,4 +92,30 @@ img {
   border-radius: 8px;
   display: block;
   margin: 0 auto;
+}
+
+.minecraft-card {
+  background-color: #202024;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #29292e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.minecraft-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+
+}
+
+.niffler-section {
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.niffler-section:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
 }
